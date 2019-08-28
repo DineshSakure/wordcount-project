@@ -1,0 +1,13 @@
+THIS IS HTML FAM !!!
+
+{{name}}
+
+<form action ="{% url 'count' %}">
+  <textarea name="fulltext" rows="8" cols="80"></textarea>
+  First name: <input type="text" name="fname"><br>
+  <br />
+  <input type="submit" value="Count!" />
+  <br />
+  <br />
+  <a href="{% url 'aboutus' %}">ABOUT US</a>
+</form>

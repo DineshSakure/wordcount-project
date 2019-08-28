@@ -1,0 +1,14 @@
+<h1>hey there my name and age is <B>{{name}}  {{age}}</h1>
+
+<h1> Word Count of following string is: {{Count}}</h1>
+</BR>
+<a href="{% url 'home' %}"> Start Again </a>
+</BR>
+{{fulltext}}
+</BR>
+{% for word , dictCount in worddict %}
+{{ word }} - {{ dictCount }}
+</BR>
+
+{% endfor %}
+{{worddict}}
